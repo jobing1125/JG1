@@ -26,19 +26,19 @@ public class Google {
 	public void setup() throws InterruptedException
 	{
 		 
-		//ChromeDriver driver=new ChromeDriver();
-//		Actions ac=new Actions(driver);
-//		driver.manage().window().maximize();
-//		
-//		driver.get("https://demoqa.com/droppable/");
-//		JavascriptExecutor js=(JavascriptExecutor) driver;
-//		js.executeScript("window.scrollBy(0,550)");
-//		Thread.sleep(4000);
-//		WebElement drag=driver.findElement(By.xpath("//*[contains(text(),'Drag me')]"));
-//		WebElement drop=driver.findElement(By.xpath("//div[@id='droppable']"));
-//		ac.dragAndDrop(drag, drop);
-//		ac.perform();
-//		driver.quit();
+		ChromeDriver driver=new ChromeDriver();
+	Actions ac=new Actions(driver);
+		driver.manage().window().maximize();
+	
+		driver.get("https://demoqa.com/droppable/");
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,550)");
+		Thread.sleep(4000);
+		WebElement drag=driver.findElement(By.xpath("//*[contains(text(),'Drag me')]"));
+		WebElement drop=driver.findElement(By.xpath("//div[@id='droppable']"));
+		ac.dragAndDrop(drag, drop);
+		ac.perform();
+		driver.quit();
 				driver.get("https://www.ebay.com/");
 		driver.manage().window().maximize();
 		Actions act=new Actions(driver);
