@@ -39,7 +39,7 @@ public class Google {
 		ac.dragAndDrop(drag, drop);
 		ac.perform();
 		driver.quit();
-				driver.get("https://www.ebay.com/");
+		driver.get("https://www.ebay.com/");
 		driver.manage().window().maximize();
 		Actions act=new Actions(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
